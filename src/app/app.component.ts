@@ -55,11 +55,11 @@ export class AppComponent implements OnInit {
   onSubmit(): void {
     this.submitted = true;
 
-    if (this.form.invalid) {
-      return;
-    }
+    // if (this.form.invalid) {
+    //   return;
+    // }
 
-    console.log(this.form.value, this.form.valid, this.form.invalid);
+    console.log(this.form.value, this.form.valid, this.form.invalid, this.form);
   }
 
   onReset(): void {
